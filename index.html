@@ -1,0 +1,227 @@
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UNSEEN — Talent Deserves a Chance</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UNSEEN — Talent Deserves a Chance</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">UNSEEN<span>.</span></div>
+
+        <div class="nav-links">
+            <a href="#discover">Discover</a>
+            <a href="#about">About</a>
+            <button onclick="openShowcase()">Showcase Your Talent</button>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">THE NEXT GENERATION IS HERE</p>
+
+                <h1>
+                    Talent doesn't need
+                    <span>connections.</span>
+                    It needs a chance.
+                </h1>
+
+                <p class="hero-text">
+                    A place where young minds can showcase their ideas,
+                    skills and projects — and get discovered for what
+                    they can actually do.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="primary-btn" onclick="openShowcase()">
+                        Showcase Your Talent →
+                    </button>
+
+                    <a href="#discover" class="secondary-btn">
+                        Discover Talent
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-card">
+
+                <div class="card-top">
+                    <span>✦ FEATURED</span>
+                    <span>● LIVE</span>
+                </div>
+
+                <div class="creator-icon">A</div>
+
+                <h3>Aarav</h3>
+                <p>Class 9 · Young Inventor</p>
+
+                <div class="tags">
+                    <span>Arduino</span>
+                    <span>Electronics</span>
+                    <span>Innovation</span>
+                </div>
+
+                <div class="project">
+                    <small>PROJECT</small>
+                    <strong>Smart Irrigation System</strong>
+                    <p>Working prototype built to reduce water waste.</p>
+                </div>
+
+                <button class="view-btn">View Project →</button>
+
+            </div>
+
+        </section>
+
+
+        <!-- DISCOVER -->
+        <section class="discover" id="discover">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">DISCOVER</p>
+                    <h2>Talent is everywhere.</h2>
+                </div>
+
+                <p>
+                    Not every great mind has a great network.
+                    We're changing that.
+                </p>
+            </div>
+
+
+            <div class="talent-grid">
+
+                <div class="talent-card">
+                    <div class="avatar">R</div>
+
+                    <h3>Riya</h3>
+                    <p>Class 11 · Designer</p>
+
+                    <div class="talent-line"></div>
+
+                    <small>SKILLS</small>
+                    <p class="skills">UI/UX · Figma · Branding</p>
+
+                    <button>View Profile →</button>
+                </div>
+
+
+                <div class="talent-card">
+                    <div class="avatar">K</div>
+
+                    <h3>Kabir</h3>
+                    <p>Class 10 · Coder</p>
+
+                    <div class="talent-line"></div>
+
+                    <small>SKILLS</small>
+                    <p class="skills">Python · Web · AI</p>
+
+                    <button>View Profile →</button>
+                </div>
+
+
+                <div class="talent-card">
+                    <div class="avatar">S</div>
+
+                    <h3>Siya</h3>
+                    <p>Class 8 · Inventor</p>
+
+                    <div class="talent-line"></div>
+
+                    <small>PROJECT</small>
+                    <p class="skills">Low-cost Air Monitor</p>
+
+                    <button>View Project →</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+
+            <p class="eyebrow">WHY UNSEEN?</p>
+
+            <h2>
+                Your background shouldn't decide
+                <span>your opportunity.</span>
+            </h2>
+
+            <p>
+                We believe young people should be discovered for their
+                ideas, skills and work — not their school name, family
+                background or number of connections.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- SHOWCASE POPUP -->
+    <div class="modal" id="showcaseModal">
+
+        <div class="modal-box">
+
+            <button class="close-btn" onclick="closeShowcase()">×</button>
+
+            <p class="eyebrow">SHOWCASE</p>
+
+            <h2>What can you build?</h2>
+
+            <p>
+                Tell us about your idea, skill or project.
+            </p>
+
+            <input type="text" placeholder="Your display name">
+
+            <input type="text" placeholder="Your class / age range">
+
+            <input type="text" placeholder="Your main skill">
+
+            <textarea placeholder="Tell us about your idea or project"></textarea>
+
+            <button class="primary-btn" onclick="submitShowcase()">
+                Create Showcase →
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="logo">UNSEEN<span>.</span></div>
+        <p>Talent deserves a chance.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
