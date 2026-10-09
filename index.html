@@ -1,227 +1,100 @@
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>UNSEEN — Talent Deserves a Chance</title>
-
-    <link rel="stylesheet" href="style.css">
-
-</head><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>UNSEEN — Talent Deserves a Chance</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UNSEEN helps young creators showcase skills, projects, and ideas.">
+  <meta name="theme-color" content="#0b0d12">
+  <title>UNSEEN — Where Potential Gets Discovered</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-
-    <nav class="navbar">
-        <div class="logo">UNSEEN<span>.</span></div>
-
-        <div class="nav-links">
-            <a href="#discover">Discover</a>
-            <a href="#about">About</a>
-            <button onclick="openShowcase()">Showcase Your Talent</button>
-        </div>
+  <div class="announcement">A place for ideas that deserve to be seen <span>✦</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="UNSEEN home"><span class="brand-mark">U</span><span>UNSEEN<small>Potential has no age.</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav" class="nav-links">
+      <a href="#discover">Discover</a><a href="#how">How it works</a><a href="#community">Community</a>
+      <button class="button button-small" data-open-profile>Build your profile <span>↗</span></button>
     </nav>
-
-
-    <main>
-
-        <!-- HERO -->
-        <section class="hero">
-
-            <div class="hero-content">
-
-                <p class="eyebrow">THE NEXT GENERATION IS HERE</p>
-
-                <h1>
-                    Talent doesn't need
-                    <span>connections.</span>
-                    It needs a chance.
-                </h1>
-
-                <p class="hero-text">
-                    A place where young minds can showcase their ideas,
-                    skills and projects — and get discovered for what
-                    they can actually do.
-                </p>
-
-                <div class="hero-buttons">
-                    <button class="primary-btn" onclick="openShowcase()">
-                        Showcase Your Talent →
-                    </button>
-
-                    <a href="#discover" class="secondary-btn">
-                        Discover Talent
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="hero-card">
-
-                <div class="card-top">
-                    <span>✦ FEATURED</span>
-                    <span>● LIVE</span>
-                </div>
-
-                <div class="creator-icon">A</div>
-
-                <h3>Aarav</h3>
-                <p>Class 9 · Young Inventor</p>
-
-                <div class="tags">
-                    <span>Arduino</span>
-                    <span>Electronics</span>
-                    <span>Innovation</span>
-                </div>
-
-                <div class="project">
-                    <small>PROJECT</small>
-                    <strong>Smart Irrigation System</strong>
-                    <p>Working prototype built to reduce water waste.</p>
-                </div>
-
-                <button class="view-btn">View Project →</button>
-
-            </div>
-
-        </section>
-
-
-        <!-- DISCOVER -->
-        <section class="discover" id="discover">
-
-            <div class="section-heading">
-                <div>
-                    <p class="eyebrow">DISCOVER</p>
-                    <h2>Talent is everywhere.</h2>
-                </div>
-
-                <p>
-                    Not every great mind has a great network.
-                    We're changing that.
-                </p>
-            </div>
-
-
-            <div class="talent-grid">
-
-                <div class="talent-card">
-                    <div class="avatar">R</div>
-
-                    <h3>Riya</h3>
-                    <p>Class 11 · Designer</p>
-
-                    <div class="talent-line"></div>
-
-                    <small>SKILLS</small>
-                    <p class="skills">UI/UX · Figma · Branding</p>
-
-                    <button>View Profile →</button>
-                </div>
-
-
-                <div class="talent-card">
-                    <div class="avatar">K</div>
-
-                    <h3>Kabir</h3>
-                    <p>Class 10 · Coder</p>
-
-                    <div class="talent-line"></div>
-
-                    <small>SKILLS</small>
-                    <p class="skills">Python · Web · AI</p>
-
-                    <button>View Profile →</button>
-                </div>
-
-
-                <div class="talent-card">
-                    <div class="avatar">S</div>
-
-                    <h3>Siya</h3>
-                    <p>Class 8 · Inventor</p>
-
-                    <div class="talent-line"></div>
-
-                    <small>PROJECT</small>
-                    <p class="skills">Low-cost Air Monitor</p>
-
-                    <button>View Project →</button>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ABOUT -->
-        <section class="about" id="about">
-
-            <p class="eyebrow">WHY UNSEEN?</p>
-
-            <h2>
-                Your background shouldn't decide
-                <span>your opportunity.</span>
-            </h2>
-
-            <p>
-                We believe young people should be discovered for their
-                ideas, skills and work — not their school name, family
-                background or number of connections.
-            </p>
-
-        </section>
-
-    </main>
-
-
-    <!-- SHOWCASE POPUP -->
-    <div class="modal" id="showcaseModal">
-
-        <div class="modal-box">
-
-            <button class="close-btn" onclick="closeShowcase()">×</button>
-
-            <p class="eyebrow">SHOWCASE</p>
-
-            <h2>What can you build?</h2>
-
-            <p>
-                Tell us about your idea, skill or project.
-            </p>
-
-            <input type="text" placeholder="Your display name">
-
-            <input type="text" placeholder="Your class / age range">
-
-            <input type="text" placeholder="Your main skill">
-
-            <textarea placeholder="Tell us about your idea or project"></textarea>
-
-            <button class="primary-btn" onclick="submitShowcase()">
-                Create Showcase →
-            </button>
-
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> THE NEXT GENERATION OF CREATORS</p>
+        <h1>Your potential.<br><span class="gradient-text">Out in the open.</span></h1>
+        <p class="hero-subtitle">A place for young builders, curious minds, and bold ideas to be discovered — not defined by their age, marks, or connections.</p>
+        <div class="hero-actions">
+          <button class="button" data-open-profile>Build your profile <span>↗</span></button>
+          <a class="button button-ghost" href="#discover">Explore ideas <span>↓</span></a>
         </div>
+        <div class="hero-proof"><span class="proof-icon">✦</span><span><strong>Skills over labels.</strong> Ideas over introductions.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract illustration representing ideas and creativity">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-core"><span>U</span><small>UNSEEN</small></div>
+        <div class="float-card card-idea"><span class="mini-icon">✳</span><div><strong>Idea in motion</strong><small>Every big thing starts small</small></div></div>
+        <div class="float-card card-skill"><span class="mini-icon green">↗</span><div><strong>Skills that speak</strong><small>Show what you can do</small></div></div>
+        <div class="spark spark-a">✦</div><div class="spark spark-b">✧</div>
+      </div>
+      <div class="hero-bottom"><span>01 / MAKE YOURSELF VISIBLE</span><span>BUILT FOR THE CURIOUS <span class="arrow-down">↓</span></span></div>
+    </section>
 
-    </div>
+    <section id="discover" class="section-wrap section-block">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COMMUNITY</p><h2>Discover what’s <span class="gradient-text">possible.</span></h2><p class="section-description">Explore projects, find fresh perspectives, and see what young creators are working on.</p></div>
+        <button class="button button-ghost" data-open-profile>Share your idea <span>↗</span></button>
+      </div>
+      <div class="filters">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search people, skills, or ideas..." aria-label="Search profiles and ideas"></label>
+        <select id="categoryFilter" aria-label="Filter by category"><option value="all">All categories</option><option>Technology</option><option>Education</option><option>Environment</option><option>Business</option><option>Design</option><option>Other</option></select>
+        <select id="stageFilter" aria-label="Filter by project stage"><option value="all">All stages</option><option>Just an idea</option><option>Researching</option><option>Building</option><option>Launched</option></select>
+      </div>
+      <div id="profileGrid" class="profile-grid" aria-live="polite"></div>
+      <div id="emptyState" class="empty-state" hidden><span>✳</span><h3>No matches yet</h3><p>Try another search or be the first to share an idea.</p><button class="button" data-open-profile>Create a profile</button></div>
+      <p class="demo-note"><span>ⓘ</span> Demo profiles are examples. This prototype saves submissions only in this browser; it is not a shared public database yet.</p>
+    </section>
 
+    <section id="how" class="how-section">
+      <div class="section-wrap section-block">
+        <p class="eyebrow">SIMPLE BY DESIGN</p><h2>Three steps. <span class="gradient-text">One starting point.</span></h2>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">01</span><div class="step-symbol">◉</div><h3>Show who you are</h3><p>Add your learning stage, interests, skills, and a short introduction. You don’t need a perfect résumé.</p></article>
+          <article class="step-card"><span class="step-number">02</span><div class="step-symbol">✳</div><h3>Put your idea out there</h3><p>Explain the problem you care about, your proposed solution, and what stage you’re at.</p></article>
+          <article class="step-card"><span class="step-number">03</span><div class="step-symbol">↗</div><h3>Keep building</h3><p>Show progress, add projects, and prepare to connect with legitimate opportunities as the platform grows.</p></article>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-        <div class="logo">UNSEEN<span>.</span></div>
-        <p>Talent deserves a chance.</p>
-    </footer>
+    <section id="community" class="cta-section section-wrap">
+      <div class="cta-panel"><div><p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p><h2>Don’t wait to be<br><span class="gradient-text">discovered.</span></h2><p>Start with what you know. Build toward what you imagine.</p></div><button class="button" data-open-profile>Create your profile <span>↗</span></button><div class="cta-orb"></div></div>
+    </section>
+  </main>
 
+  <footer class="site-footer section-wrap"><a class="brand" href="#home"><span class="brand-mark">U</span><span>UNSEEN<small>Potential has no age.</small></span></a><p>Made for the next generation of builders.</p><span>© <span id="year"></span> UNSEEN</span></footer>
 
-    <script src="script.js"></script>
-
+  <dialog id="profileDialog" class="profile-dialog">
+    <div class="dialog-head"><div><p class="eyebrow">YOUR SPACE TO SHINE</p><h2>Build your profile</h2><p class="dialog-subtitle">Share what you’re comfortable making public.</p></div><button id="closeDialog" class="icon-button" aria-label="Close form">×</button></div>
+    <form id="profileForm">
+      <div class="form-grid">
+        <label>Display name <span>*</span><input name="name" required maxlength="40" placeholder="What should we call you?"></label>
+        <label>Age group <span>*</span><select name="ageGroup" required><option value="">Choose age group</option><option>Under 13</option><option>13–15</option><option>16–17</option><option>18+</option></select></label>
+        <label>Education / learning stage <span>*</span><select name="education" required><option value="">Choose one</option><option>Class 6–8</option><option>Class 9–10</option><option>Class 11–12</option><option>College</option><option>Self-learning</option><option>Other</option></select></label>
+        <label>Interest / idea category <span>*</span><select name="category" required><option value="">Choose category</option><option>Technology</option><option>Education</option><option>Environment</option><option>Business</option><option>Design</option><option>Other</option></select></label>
+        <label class="full-field">Skills and interests<input name="skills" maxlength="120" placeholder="e.g. coding, drawing, research"></label>
+        <label class="full-field">A little about you <span>*</span><textarea name="bio" required maxlength="260" rows="3" placeholder="What are you curious about? What do you enjoy building?"></textarea><small class="field-help">Keep personal details private. Don’t include your phone number, exact birthday, address, or school name.</small></label>
+        <div class="form-divider full-field"><span>YOUR IDEA OR PROJECT</span></div>
+        <label class="full-field">Idea / project title <span>*</span><input name="ideaTitle" required maxlength="70" placeholder="Give your idea a clear name"></label>
+        <label class="full-field">What problem are you trying to solve? <span>*</span><textarea name="ideaDescription" required maxlength="500" rows="4" placeholder="Describe the problem and how your idea could help..."></textarea></label>
+        <label class="full-field">Current stage <span>*</span><select name="stage" required><option value="">Choose stage</option><option>Just an idea</option><option>Researching</option><option>Building</option><option>Launched</option></select></label>
+      </div>
+      <label class="consent-row"><input type="checkbox" name="consent" required><span>I understand this prototype stores the information in this browser and that the profile card may be visible to anyone using this browser.</span></label>
+      <div class="form-actions"><button type="button" id="cancelDialog" class="button button-ghost">Cancel</button><button class="button" type="submit">Save profile <span>↗</span></button></div>
+      <p id="formMessage" class="form-message" role="status"></p>
+    </form>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
