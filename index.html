@@ -7,6 +7,8 @@
   <meta name="theme-color" content="#0b0d12">
   <title>UNSEEN — Where Potential Gets Discovered</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -54,7 +56,7 @@
       </div>
       <div id="profileGrid" class="profile-grid" aria-live="polite"></div>
       <div id="emptyState" class="empty-state" hidden><span>✳</span><h3>No matches yet</h3><p>Try another search or be the first to share an idea.</p><button class="button" data-open-profile>Create a profile</button></div>
-      <p class="demo-note"><span>ⓘ</span> Demo profiles are examples. This prototype saves submissions only in this browser; it is not a shared public database yet.</p>
+      <p class="demo-note"><span>ⓘ</span> Demo profiles are examples. Submitted profiles are stored online and may be visible publicly. Share only information you are comfortable making public.</p>
     </section>
 
     <section id="how" class="how-section">
